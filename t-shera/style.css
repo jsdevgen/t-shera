@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  block-size: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  min-height: 100wh;
+}
+.nav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  margin: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: padding 0.3s ease;
+  transition: color 0.3s ease;
+  transition: box-shadow 0.3s ease;
+}
+.nav .logo img {
+  width: 55px;
+  height: 35px;
+  border-radius: 3px;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.nav ul li {
+  margin-right: 20px;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 1px dashed #333;
+  color: rgb(0, 128, 81);
+}
+.shera {
+  font-size: 2rem;
+  color: red;
+}
+.sher {
+  font-size: 1.5rem;
+  color: rgb(0, 128, 81);
+}
+.ssh {
+  color: whitesmoke;
+  font-size: 2rem;
+}
+.hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+}
+.gallary img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  border: 3px solid rgb(214, 211, 211);
+  transition: 0.5s ease-in-out;
+  border-radius: 15px;
+}
+
+.gallary img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.gallary {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+.footer a {
+  /* color: #fff; */
+  margin: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  border-radius: 50px;
+}
+.footer a img {
+  transition: color 0.3s ease;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+}
+.footer ul li {
+  margin-right: 20px;
+  list-style: none;
+}
+.t-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.3;
+  padding: 1rem 0.5rem;
+  letter-spacing: 0.5px;
+}
